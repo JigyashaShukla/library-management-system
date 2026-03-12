@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Transactions</title>
+
+<style>
+body{
+font-family: Arial;
+}
+
+.container{
+width:900px;
+margin:auto;
+border:1px solid #000;
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+padding:10px;
+border-bottom:1px solid black;
+font-weight:bold;
+}
+
+.main{
+display:flex;
+}
+
+.sidebar{
+width:200px;
+border-right:1px solid black;
+}
+
+.sidebar div{
+padding:10px;
+border-bottom:1px solid #ccc;
+}
+
+.form-area{
+flex:1;
+padding:15px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+td{
+padding:8px;
+border-bottom:1px solid #ddd;
+}
+
+input, textarea{
+width:95%;
+padding:6px;
+}
+
+.buttons{
+margin-top:20px;
+display:flex;
+justify-content:space-between;
+}
+
+button{
+padding:10px 40px;
+border:none;
+border-radius:25px;
+background:linear-gradient(#6db6ff,#2d78c8);
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+.logout{
+text-align:right;
+padding:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<div>Transactions</div>
+<div>Home</div>
+</div>
+
+<div class="main">
+
+<div class="sidebar">
+<div>Is book available?</div>
+<div>Issue book?</div>
+<div>Return book?</div>
+<div>Pay Fine?</div>
+</div>
+
+<div class="form-area">
+
+<h3>Book Issue</h3>
+
+<table>
+
+<tr>
+<td>Enter Book Name</td>
+<td>
+<select>
+<option>Select Book</option>
+<option>Science</option>
+<option>Economics</option>
+<option>Fiction</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Enter Author</td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td>Issue Date</td>
+<td><input type="date"></td>
+</tr>
+
+<tr>
+<td>Return Date</td>
+<td><input type="date"></td>
+</tr>
+
+<tr>
+<td>Remarks</td>
+<td><textarea></textarea></td>
+</tr>
+
+</table>
+
+<div class="buttons">
+<button>Cancel</button>
+<button>Confirm</button>
+</div>
+
+</div>
+
+</div>
+
+<div class="logout">Log Out</div>
+
+</div>
+
+</body>
+</html>

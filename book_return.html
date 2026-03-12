@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Return Book</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background:#f4f4f4;
+}
+
+.container{
+width:900px;
+margin:40px auto;
+border:2px solid black;
+background:white;
+padding:10px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+td,th{
+border:1px solid black;
+padding:8px;
+}
+
+.header{
+font-weight:bold;
+}
+
+.button{
+background:#5b8ec5;
+color:white;
+border:none;
+padding:10px 25px;
+border-radius:6px;
+font-size:15px;
+cursor:pointer;
+}
+
+.right{
+text-align:right;
+}
+
+.note{
+margin-left:20px;
+font-size:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div style="display:flex">
+
+<div class="container">
+
+<table>
+
+<tr class="header">
+<td>Chart</td>
+<td colspan="3" align="center">Transactions</td>
+<td align="right">Home</td>
+</tr>
+
+<tr>
+<td>Is book available?</td>
+<td colspan="4"><b>Return Book</b></td>
+</tr>
+
+<tr>
+<td>Issue book?</td>
+<td>Enter Book Name</td>
+<td>
+<select>
+<option>Drop Down</option>
+<option>Java</option>
+<option>Python</option>
+<option>DBMS</option>
+</select>
+</td>
+<td colspan="2"></td>
+</tr>
+
+<tr>
+<td>Return book?</td>
+<td>Enter Author</td>
+<td><textarea rows="1" cols="20"></textarea></td>
+<td colspan="2"></td>
+</tr>
+
+<tr>
+<td>Pay Fine?</td>
+<td>Serial No</td>
+<td>
+<select>
+<option>Drop Down</option>
+<option>001</option>
+<option>002</option>
+<option>003</option>
+</select>
+</td>
+<td colspan="2">Mandatory</td>
+</tr>
+
+<tr>
+<td></td>
+<td>Issue Date</td>
+<td><input type="date"></td>
+<td colspan="2"></td>
+</tr>
+
+<tr>
+<td></td>
+<td>Return Date</td>
+<td><input type="date"></td>
+<td colspan="2"></td>
+</tr>
+
+<tr>
+<td></td>
+<td>Remarks</td>
+<td colspan="3">
+<textarea rows="2" cols="40" placeholder="Text Box / area Non Mandatory"></textarea>
+</td>
+</tr>
+
+</table>
+
+<br>
+
+<button class="button">Cancel</button>
+<button class="button">Confirm</button>
+
+<div class="right">
+<a href="#">Log Out</a>
+</div>
+
+</div>
+
+<div class="note">
+
+<b>Note:</b><br><br>
+
+If logged in as Admin - home will take to Admin Home Page<br><br>
+
+If logged in as user - home will take to User Home Page
+
+</div>
+
+</div>
+
+</body>
+</html>

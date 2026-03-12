@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Library Management - Reports</title>
+<style>
+body{
+    font-family: Arial;
+    margin:0;
+    background:#f4f4f4;
+}
+
+.container{
+    display:flex;
+    height:100vh;
+}
+
+/* Sidebar */
+.sidebar{
+    width:220px;
+    background:#e6e6e6;
+    padding:10px;
+}
+
+.sidebar h3{
+    margin-top:0;
+}
+
+.menu{
+    list-style:none;
+    padding:0;
+}
+
+.menu li{
+    padding:10px;
+    border-bottom:1px solid #ccc;
+    cursor:pointer;
+}
+
+.menu li:hover{
+    background:#d0d0d0;
+}
+
+/* Main content */
+.main{
+    flex:1;
+    padding:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+table, th, td{
+    border:1px solid black;
+}
+
+th, td{
+    padding:10px;
+    text-align:left;
+}
+
+th{
+    background:#f0f0f0;
+}
+
+/* Buttons */
+.buttons{
+    margin-top:15px;
+}
+
+button{
+    padding:8px 20px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.back{
+    background:#4a76c9;
+    color:white;
+}
+
+.logout{
+    float:right;
+    background:#888;
+    color:white;
+}
+
+.note{
+    margin-top:30px;
+    font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="sidebar">
+<h3>Chart</h3>
+<ul class="menu">
+<li>Master List of Books</li>
+<li>Master List of Movies</li>
+<li>Master List of Memberships</li>
+<li>Active Issues</li>
+<li>Overdue returns</li>
+<li>Issue Requests</li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2>Reports</h2>
+<h3>Master List of Books</h3>
+
+<table>
+<tr>
+<th>Serial No</th>
+<th>Name of Book</th>
+<th>Author Name</th>
+<th>Category</th>
+<th>Status</th>
+<th>Cost</th>
+<th>Procurement Date</th>
+</tr>
+
+<tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+</table>
+
+<div class="buttons">
+<button class="back">Back</button>
+<button class="logout">Log Out</button>
+</div>
+
+<div class="note">
+<p>Note: If logged in as Admin - home will take to Admin Home Page</p>
+<p>If logged in as user - home will take to User Home Page</p>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html

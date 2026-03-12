@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Issue Book</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f5f5f5;
+}
+
+.container{
+width:1000px;
+margin:40px auto;
+background:white;
+border:2px solid black;
+padding:15px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+td,th{
+border:1px solid black;
+padding:8px;
+text-align:center;
+}
+
+.button{
+background:#5b8ec5;
+color:white;
+border:none;
+padding:10px 30px;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+margin-top:10px;
+}
+
+.note{
+border:1px solid black;
+width:200px;
+padding:10px;
+margin-top:20px;
+font-size:14px;
+}
+
+.right{
+text-align:right;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<table>
+
+<tr>
+<td><b>Chart</b></td>
+<td colspan="4"><b>Transactions</b></td>
+<td class="right"><b>Home</b></td>
+</tr>
+
+<tr>
+<td><a href="#">Is book available?</a></td>
+<td colspan="5">Book Availability</td>
+</tr>
+
+<tr>
+<td><a href="#">Issue book?</a></td>
+<th>Book Name</th>
+<th>Author Name</th>
+<th>Serial Number</th>
+<th>Available</th>
+<th>Select to issue the book</th>
+</tr>
+
+<tr>
+<td><a href="#">Return book?</a></td>
+<td>A</td>
+<td>Author Name</td>
+<td>Serial 001</td>
+<td>Y</td>
+<td><input type="radio" name="book"></td>
+</tr>
+
+<tr>
+<td><a href="#">Pay Fine?</a></td>
+<td>A</td>
+<td>Author Name</td>
+<td>Serial 002</td>
+<td>Y</td>
+<td><input type="radio" name="book"></td>
+</tr>
+
+<tr>
+<td></td>
+<td>A</td>
+<td>Author Name</td>
+<td>Serial 003</td>
+<td>Y</td>
+<td><input type="radio" name="book"></td>
+</tr>
+
+<tr>
+<td></td>
+<td>A</td>
+<td>Author Name</td>
+<td>Serial 004</td>
+<td>N</td>
+<td></td>
+</tr>
+
+</table>
+
+<button class="button">Search</button>
+<br>
+<button class="button">Cancel</button>
+
+<div class="right">
+<a href="#">Log Out</a>
+</div>
+
+<div class="note">
+<b>Note:</b><br><br>
+
+If logged in as Admin - home will take to Admin Home Page<br><br>
+
+If logged in as user - home will take to User Home Page
+</div>
+
+</div>
+
+</body>
+
+</html>
